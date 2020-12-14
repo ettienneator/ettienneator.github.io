@@ -23,6 +23,27 @@
           background-size: cover;
       }
 
+      .parallax_text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 100pt;
+          font-family: "Lucida Console", "Courier New", monospace;
+          color: #D73F28;
+      }
+
+      @media only screen and (max-width: 800px) {
+          #parallax_smText{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50pt;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: #D73F28;;
+        }
+      }
 
     </style>
 
@@ -33,7 +54,7 @@
 
 <!-- Navbar----------------------------------------------------------------- -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d5d7d9;">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Ettienne Martinez</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,9 +72,15 @@
   </nav>
 
 <!-- Front main column ----------------------------------------------------- -->
-<div class="parallax">asfdsdfasfa</div>
+<div class="parallax">
+  <div class="parallax_text">
+      <p id="parallax_smText">Welcome:)</p>
+  </div>
 
-<div style="height:1000px;background-color:red;font-size:36px">
+
+</div>
+
+<div style="height:1000px;background-color:white;font-size:36px">
 Scroll Up and Down this page to see the parallax scrolling effect.
 This div is just here to enable scrolling.
 Tip: Try to remove the background-attachment property to remove the scrolling effect.
