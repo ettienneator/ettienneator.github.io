@@ -45,6 +45,28 @@
         }
       }
 
+
+/*-------------- Scrollbar----------------------------------------------------------*/
+            /* width */
+            ::-webkit-scrollbar {
+              width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+              background: #f1f1f1;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+              background: #888;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+              background: #555;
+            }
+/*-----------------------------------------------------------------------------*/
     </style>
 
   </head>
@@ -76,14 +98,18 @@
   <div class="parallax_text">
       <p id="parallax_smText">Welcome:)</p>
   </div>
-
-
 </div>
 
+<!-- ---------------------------------------------------------------------- -->
+
+
 <div style="height:1000px;background-color:white;font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    <table>
+      <tr>
+        <td border=1px>one</td>
+        <td border=1px>two</td>
+      </tr>
+    </table>
 </div>
 
 
